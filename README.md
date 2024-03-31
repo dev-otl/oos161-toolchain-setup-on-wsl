@@ -11,7 +11,7 @@
     chmod +x wslSetupOS161.sh && ./wslSetupOS161.sh
 
 # temporarily add to system path
-    PATH=$HOME/os161/secondTryWithScript/os161/tools/bin:$PATH
+    PATH=$HOME/path/to/os161/tools/bin:$PATH
 
 # Directories
 All files are placed in os161 directory
