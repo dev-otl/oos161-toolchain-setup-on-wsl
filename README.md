@@ -38,4 +38,7 @@ To add path in current shell:
 # Links:
 [OS161 Official website: (http://os161.org)](http://os161.org)
 
-[!DON'T USE: (https://os161.org)](http://os161.org)
+[Download tarballs here](http://os161.org/download/)
+
+[!DON'T USE https link: (https://os161.org)](http://os161.org)
+
