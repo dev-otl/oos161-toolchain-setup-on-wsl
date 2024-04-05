@@ -2,7 +2,7 @@
 set -xe
 
 SCRIPT_DIR=$(pwd .)
-OS161_DIR=$SCRIPT_DIR/os161
+OS161_DIR=$SCRIPT_DIR/../os161
 TOOLBUILD_DIR=$OS161_DIR/toolbuild
 TOOLS_DIR=$OS161_DIR/tools
 MAKE_FLAGS="-j -s"
@@ -13,11 +13,11 @@ PATH=$OS161_DIR/tools/bin:$PATH
 
 
 ## Delete and rereate directories
-if [ -d os161 ]
+if [ -d $OS161_DIR ]
 then
 rm -rf os161
 fi
-mkdir -p $TOOLBUILD_DIR os161/tools/bin
+mkdir -p $TOOLBUILD_DIR $OS161_DIR/tools/bin
 
 
 ## building binutils
