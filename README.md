@@ -39,7 +39,7 @@ To add path in current shell:
 [OS161 Official website: (http://os161.org)](http://os161.org)
 
 [Download tarballs here](http://os161.org/download/)
-## or download using script:
+### or download using script:
     chmod +x downloadTarballs.sh && ./downloadTarballs.sh
 
 [!DON'T USE https link: (https://os161.org)](http://os161.org)
