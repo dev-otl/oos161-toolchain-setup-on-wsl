@@ -32,6 +32,10 @@ To add path in current shell:
 
     PATH=$HOME/path/to/os161/tools/bin:$PATH
 
+### If running after script completes
+    PATH=$(pwd .)/../os161/tools/bin:$PATH
+
+
 # test build os161 with sample conf
     chmod +x testBuild.sh && ./testBuild.sh
 
