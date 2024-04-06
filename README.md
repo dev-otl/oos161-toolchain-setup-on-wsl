@@ -9,9 +9,9 @@ Place the files in directory containing following .tar.gz files:
 
     chmod +x wslPreSetupOS161.sh && ./wslPreSetupOS161.sh
 
-## or manually install: build-essential gdb libncurses-dev 
+## or manually install: build-essential gdb libncurses-dev bmake 
 
-    sudo apt install build-essential gdb libncurses-dev 
+    sudo apt install build-essential gdb libncurses-dev bmake
 
 # run to build binaries
     chmod +x wslSetupOS161.sh && ./wslSetupOS161.sh
@@ -32,8 +32,12 @@ To add path in current shell:
 
     PATH=$HOME/path/to/os161/tools/bin:$PATH
 
-### If running after script completes
-    PATH=$(pwd .)/../os161/tools/bin:$PATH
+### If running in the script directory
+    export PATH=$(pwd .)/../os161/tools/bin:$PATH
+
+Or
+
+    source sourceToSetPathTemporarily
 
 
 # test build os161 with sample conf
@@ -48,3 +52,5 @@ To add path in current shell:
 
 [!DON'T USE https link: (https://os161.org)](http://os161.org)
 
+# Everything, everywhere, all at once
+    chmod +x *.sh && ./wslPreSetupOS161.sh && ./downloadTarballs.sh && ./wslSetupOS161.sh && ./testBuild.sh

@@ -1,0 +1,1 @@
+PATH=$(pwd .)/../os161/tools/bin:$PATH
