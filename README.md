@@ -54,3 +54,11 @@ Or
 
 # Everything, everywhere, all at once
     chmod +x *.sh && ./wslPreSetupOS161.sh && ./downloadTarballs.sh && ./wslSetupOS161.sh && ./testBuild.sh
+
+# Building on linux with ubuntu 22
+!Not properly tested!
+
+If you get python error, try removing python-is-python3 package
+
+    sudo apt remove python-is-python3
+    
