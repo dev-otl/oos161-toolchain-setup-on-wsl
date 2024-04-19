@@ -15,7 +15,7 @@ PATH=$OS161_DIR/tools/bin:$PATH
 ## Delete and rereate directories
 if [ -d $OS161_DIR ]
 then
-rm -rf os161
+rm -rf $OS161_DIR
 fi
 mkdir -p $TOOLBUILD_DIR $OS161_DIR/tools/bin
 
