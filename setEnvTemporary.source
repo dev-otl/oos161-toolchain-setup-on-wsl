@@ -1,0 +1,2 @@
+OS161_BINPATH=$(realpath ../os161/tools/bin)    # path to newly built os161 binaries
+export PATH=\$PATH:$OS161_BINPATH
