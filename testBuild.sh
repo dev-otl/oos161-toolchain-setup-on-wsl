@@ -1,5 +1,5 @@
 #! /bin/bash
-set -xe
+#set -xe
 
 SCRIPT_DIR=$(pwd .)
 OS161_DIR=$SCRIPT_DIR/../os161
